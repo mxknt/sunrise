@@ -1,0 +1,16 @@
+targets:
+  $default:
+    builders:
+      sunrise:
+        enabled: true
+        generate_for:
+          - lib/*/*.dart
+
+builders:
+  sunrise:
+    import: "package:sunrise/sunrise.dart"
+    builder_factories: ["sunriseThemeGenerator"]
+    build_extensions: {".dart": [".sunrise_theme_generator.g.part"]}
+    auto_apply: dependents
+    build_to: cache
+    applies_builders: ["source_gen|combining_builder"]

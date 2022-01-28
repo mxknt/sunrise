@@ -5,7 +5,7 @@ import 'package:build/build.dart';
 import 'package:source_gen/source_gen.dart';
 import 'package:sunrise_annotation/sunrise_annotation.dart';
 
-class SunriseThemeGenerator extends GeneratorForAnnotation<SunriseTheme> {
+class ThemeGenerator extends GeneratorForAnnotation<SunriseTheme> {
   @override
   generateForAnnotatedElement(Element element, ConstantReader annotation, BuildStep buildStep) {
     final visitor = ModelVisitor();

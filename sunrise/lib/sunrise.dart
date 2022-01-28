@@ -7,5 +7,5 @@ import 'package:sunrise/src/generator.dart';
 import 'package:build/build.dart';
 import 'package:source_gen/source_gen.dart';
 
-Builder autoThemeGenerator(BuilderOptions options) =>
-    SharedPartBuilder([SunriseThemeGenerator()], 'sunrise_theme_generator');
+Builder sunriseThemeGenerator(BuilderOptions options) =>
+    SharedPartBuilder([ThemeGenerator()], 'sunrise_theme_generator');
