@@ -16,8 +16,9 @@ dependencies:
   analyzer: ^3.2.0
 
   sunrise_annotation:
-    path: ../sunrise_annotation
-
+    git:
+      url: https://github.com/munitum/sunrise.git
+      path: sunrise_annotation
 
 dev_dependencies:
   build_runner: ^2.1.7
