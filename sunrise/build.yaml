@@ -8,6 +8,7 @@ targets:
 
 builders:
   sunrise:
+    target: ":sunrise"
     import: "package:sunrise/sunrise.dart"
     builder_factories: ["sunriseThemeGenerator"]
     build_extensions: {".dart": [".sunrise_theme_generator.g.part"]}
