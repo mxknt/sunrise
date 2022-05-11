@@ -21,7 +21,7 @@ class ThemeGenerator extends GeneratorForAnnotation<SunriseTheme> {
     for (var item in items) {
       buff.writeln('final Color $item;');
     }
-    buff.writeln('  const $generatedClassName({');
+    buff.writeln(' $generatedClassName({');
     for (var item in items) {
       buff.writeln('required this.$item,');
     }
@@ -36,7 +36,7 @@ class ThemeGenerator extends GeneratorForAnnotation<SunriseTheme> {
     }
     buff.writeln('');
     buff.writeln(
-        '  const ${generatedClassName}Tween({required $generatedClassName begin, required $generatedClassName end}): ');
+        ' ${generatedClassName}Tween({required $generatedClassName begin, required $generatedClassName end}): ');
     for (var item in items) {
       buff.writeln('_$item = ColorTween(begin: begin.$item, end: end.$item),');
     }
